@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/allcss.css">
+    <title>Estados</title>
+</head>
+<body>
+
+    <form>
+        <div class="container-fluid text-center">
+            <h1>Escolha seu estado: </h1>
+
+            Digite seu Nome: <input type="text" name="text" id="nome"> 
+
+            <div class="options-css">
+                <select id="UF" onchange="estado()">
+                    <option>Escolha uma opção</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <center>
+        <section class="saida">
+            <output id="texto" class="text-center">...</output>
+        </section>
+    </center>
+
+    <script>
+        function estado(){
+            UF = document.getElementById('UF').value;
+            nome = document.getElementById('nome').value;
+            switch (UF)
+            {
+                case 'RJ': mensagem= 'Olá ' + nome + ', você é carioca né bixxxxcoito';
+                break;
+                case 'SP': mensagem= 'Olá ' + nome + ', São Paulo é muito bom né paulista';
+                break;
+                case 'MG': mensagem= 'Olá ' + nome + ', Minas é muito bom né mineiro';
+                break;
+                case 'RN': mensagem= 'Olá ' + nome + ', você não é Papai Noel mas mora em Natal';
+                break;
+                default: mensagem= 'Olá ' + nome + ', escolhe uma das opções ae!';
+            }
+            document.getElementById('texto').value = mensagem;
+        }
+    </script>
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

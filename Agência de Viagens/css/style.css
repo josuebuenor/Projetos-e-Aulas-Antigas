@@ -1,0 +1,24 @@
+body{
+    /*background: url('../img/sp-fundo.jpg');*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#conteudo{
+    background-color: #fff;
+    min-height: 100vh;
+    width: 75%;
+    padding: 2em;
+    margin-top:2.5em;
+    border-radius: 2em;
+}
+h1{
+    font-family: 'arial black';
+    text-shadow: 1px 1px white, -2px -2px #444;
+    margin: 0.5em;
+    text-align: center;
+}.ajusteForm{
+    display:inline-block;
+    width:60%;
+    height: 30px;
+    margin-bottom: 5px;
+}

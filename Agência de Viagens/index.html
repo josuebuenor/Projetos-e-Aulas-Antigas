@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Agência de Viagens</title>
+    </head>
+    <body>
+        <h1>Compre sua Viagem</h1>
+        <section class="container" id="conteudo">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="data">Data da Viagem</label>
+                        <input type="date" class="form-control" id="data">
+                    </div>
+                </div>
+                <div class="form-group col-md-3" style="padding-left:0;">
+                    <label for="viagem">Local da viagem</label>
+                    <select id="viagem" class="form-control">
+                        <option selected value="rio">Rio de janeiro</option>
+                        <option value="sp">Madrid</option>
+                        <option value="ny">Nova Iorque</option>
+                        <option value="pr">París</option>
+                    </select>
+                </div>
+                <div style="margin-bottom:20px;">
+                    Valor da Passagem:<span style="margin-left: 5px;" id="valor">R$:800,00</span>
+                </div>
+                Adicionais:
+                <div class="form-group row" style="margin-bottom:0;">
+                    <div class="col-sm-10">
+                        <div class="form-check" style="padding-bottom:10px;">
+                            <input class="form-check-input" type="checkbox" id="carro" style="margin-top:.5em;">
+                            <label class="form-check-label" for="carro">
+                                Aluguel de carro
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-check" style="padding-bottom:10px;">
+                            <input class="form-check-input" type="checkbox" id="guia" style="margin-top:.5em;">
+                            <label class="form-check-label" for="guia">
+                                Guia turístico
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-check" style="padding-bottom:10px;">
+                            <input class="form-check-input" type="checkbox" id="resv" style="margin-top:.5em;">
+                            <label class="form-check-label" for="resv">
+                                Reservas em restaurante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-check" style="padding-bottom:10px;">
+                            <input class="form-check-input" type="checkbox" id="hotel" style="margin-top:.5em;">
+                            <label class="form-check-label" for="hotel">
+                                Diária em Hotel
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-check" style="padding-bottom:10px;">
+                            <input class="form-check-input" type="checkbox" id="brinde" style="margin-top:.5em;">
+                            <label class="form-check-label" for="brinde">
+                                Suvenires da Cidade
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="total">Valor Total:</label>
+                        <input type="text" class="form-control" id="total" disabled>
+                    </div>
+                </div>
+                <button type="reset" class="btn btn-danger">Limpar</button>
+                <button type="button" class="btn btn-danger">Enviar</button>
+            </form>
+        </section>
+    </body>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>

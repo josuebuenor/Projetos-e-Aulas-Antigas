@@ -1,0 +1,22 @@
+#caixa{
+	width: 80%;
+	padding: 10%;
+	font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.botao input{
+    color:white;
+    background-color: salmon;
+    padding: 15px;
+    border-radius: 88%;
+    outline: none;
+    transition: 0.7s;
+}
+
+.botao input:hover{
+	background-color: lightpink;
+	transform: scale(1.3,1.3);
+
+}

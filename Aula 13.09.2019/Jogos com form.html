@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/allcss.css">
+        <title>Jogos com form</title>
+    </head>
+    <body>
+        <form>
+            <div class="container-fluid text-center">
+                <h1>Escolha seu jogo favorito: (Pacman, Minecraft ou Life is Strange)</h1>
+                    
+                        <div >
+                            <select id="jogo" onchange="game()">
+                                <option>Escolha uma opção</option>
+                                 <option value="pac">Pacman</option>
+                                <option value="mine">Minecraft</option>
+                                <option value="life">Life is Strange</option>
+                            </select>
+                        </div>
+                 
+                </div>
+        </form>
+        <center>
+        <output id="result" class="text-center">(resultado)</output>
+        </center>
+        <script>
+
+            function game(){
+                jogo = document.getElementById('jogo').value;
+              
+            switch (jogo)
+            {
+                case 'pac': mensagem='Bem nostalgico!';
+                break;
+                case 'mine': mensagem='Voltamos a 2012? kkkkkkkk';
+                break;
+                case 'life': mensagem='Um ótimo jogo :D';
+                break;
+                default: mensagem='Escolhe uma das opções!';
+            }
+            document.getElementById('result').value = mensagem;
+            }
+        </script>
+    </body>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>

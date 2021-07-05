@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/allcss.css">
+        <title>Mês</title>
+    </head>
+    <body>
+        <form>
+            <div class="container-fluid text-center">
+                <h1>Escreva um mês:</h1>
+                    
+                        <div >
+                            Escreva um mês (de 1-12)<input type="number" name="mes" id="mes" onchange="data()">
+                        </div>
+                 
+                </div>
+        </form>
+        <center>
+        <output id="texto" class="text-center">...</output>
+        </center>
+        <script>
+
+            function data(){
+                mes = document.getElementById('mes').value;
+              
+            switch (mes)
+            {
+                case '1': mensagem='Janeiro: Ferias e inicio do ano';
+                break;
+                case '2': mensagem='Fevereiro: Carnaval';
+                break;
+                case '3': mensagem='Março: Aulas começando direito';
+                break;
+                case '4': mensagem='Abril: Páscoa';
+                break;
+                case '5': mensagem='Maio: Dia das Mães';
+                break;
+                case '6': mensagem='Junho: Festa junina';
+                break;
+                case '7': mensagem='Julho: Ferias parte 2';
+                break;
+                case '8': mensagem='Agosto: Nada de mais';
+                break;
+                case '9': mensagem='Setembro: Primavera';
+                break;
+                case '10': mensagem='Outubro: Halloween';
+                break;
+                case '11': mensagem='Novembro: Black Friday';
+                break;
+                case '12': mensagem='Dezembro: Natal';
+                break;
+                default: mensagem='Por favor digite um número de 1 até 12!';
+            }
+            document.getElementById('texto').value = mensagem;
+            }
+        </script>
+    </body>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+ 	<script src="js/script.js"></script>  
+</head>
+<body>
+<center>
+	<form name="calculadora">
+	<table border="4" cellpadding="5" cellspacing="5" bgcolor="salmon">
+		<tr>
+			<td> <input type="text" name="caixa" id="caixa"> </td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" align="center" cellspacing="5" cellpadding="5" bgcolor="lightblue" class="botao">
+				<tr>
+					<td colspan="4" align="center"> <input type="button" onclick="apagar()" value="<- apagar "></td>
+				</tr> 
+                     <tr>
+                     	<td><input type="button" value="7" onclick="digito('7')"></td>
+                     	<td><input type="button" value="8" onclick="digito('8')"></td>
+                     	<td><input type="button" value="9" onclick="digito('9')"></td>
+                     	<td><input type="button" value="+" onclick="digito(' + ')"></td>
+                     </tr>
+                     <tr>
+                     	<td><input type="button" value="4" onclick="digito('4')"></td>
+                     	<td><input type="button" value="5" onclick="digito('5')"></td>
+                     	<td><input type="button" value="6" onclick="digito('6')"></td>
+                     	<td><input type="button" value="-" onclick="digito(' - ')"></td>
+                     </tr>
+                     <tr>
+                     	<td><input type="button" value="1" onclick="digito('1')"></td>
+                     	<td><input type="button" value="2" onclick="digito('2')"></td>
+                     	<td><input type="button" value="3" onclick="digito('3')"></td>
+                     	<td><input type="button" value="*" onclick="digito(' * ')"></td>
+                     </tr>
+                     <tr>
+                     	<td><input type="button" value="C" onclick="zerar()"></td>
+                     	<td><input type="button" value="0" onclick="digito('0')"></td>
+                     	<td><input type="button" value="=" onclick="executar()"></td>
+                     	<td><input type="button" value="/" onclick="digito(' / ')"></td>
+                     </tr>
+                </table>
+			</td>
+		</tr>
+	</table>
+	</form>
+</center>
+</body>
+</html>

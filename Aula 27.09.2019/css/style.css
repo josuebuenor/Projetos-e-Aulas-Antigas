@@ -1,0 +1,25 @@
+.active{
+    background-color: brown;
+    color: yellow;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.active h1 {
+    padding-bottom: 20px;
+}
+
+.active button {
+    border-radius: 75px;
+    color: brown;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 75px;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+}
